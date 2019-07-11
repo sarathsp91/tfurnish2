@@ -1,0 +1,256 @@
+.mainbody{
+  margin: 0px;
+}
+.topnav {
+    background-color: white;
+    overflow: hidden;
+  }
+  .topnav a {
+    float: left;
+    color: #777777;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+    font-size: 16px;
+    font-weight: 600;
+    font-family: sans-serif;
+  }
+  
+  .topnav a:hover {
+    color: #FE806F;
+  }
+  .topnav a.active {
+    color: #FE806F;
+  }
+  .topportion{
+    display: flex;
+    justify-content: space-around;
+    /* overflow: hidden; */
+    padding: 30px 0px;
+    z-index: 900;
+    width: 100%;
+    position: fixed;
+    background-color: white;
+  }
+  .topleft{
+    float: left;
+    display: flex;
+    flex-direction: row;
+    width: 50%;
+}
+.topright{
+    float: right;
+    display: flex;
+    flex-direction: column;
+    width: 63%;
+}
+.img1{
+  position: relative;
+  z-index: 1;
+  width: 35%;
+}
+.circle{
+  position: absolute;
+  border-radius: 50%;
+  width: 100px;
+  height: 100px;
+  display: flex;
+  text-align: center;
+  background-color: #FE7865;
+  flex-direction: column;
+  justify-content: center;
+  z-index: 2;
+  top: 10px;
+}
+  .body1{
+    display: flex;
+    flex-direction: row;
+    padding: 100px 40px 0px 40px;
+    color: #FFFAF6;
+    /* position: relative; */
+    /* height: 500px; */
+    /* background-color: red; */
+  }
+  .para1{
+      margin: 100px 50px 30px 120px;
+    font-size: 92px;
+    color: #333333;
+    font-family: sans-serif;
+  }
+  .para2{
+     margin: 0px 0px 2px 120px;
+      color: #80807F;
+      font-family: sans-serif;
+      font-size: 16px;
+  }
+
+.side{
+    display: flex;
+    justify-content: center;
+}
+
+.dots{
+display: flex;
+flex-direction: column;
+justify-content: center;
+}
+
+  
+  /* Slideshow container */
+  .slideshow-container {
+    max-width: 1000px;
+    position: relative;
+    margin: auto;
+  }
+  .dot {
+    cursor: pointer;
+    height: 15px;
+    width: 15px;
+    margin: 2px 5px;
+    background-color: #FBB0A5;
+    border-radius: 50%;
+    display: inline-block;
+    transition: background-color 0.6s ease;
+  }
+   .dot:active {
+    background-color: #FE7865;
+  }
+  
+  /* Fading animation */
+  .fade {
+    -webkit-animation-name: fade;
+    -webkit-animation-duration: 1.5s;
+    animation-name: fade;
+    animation-duration: 1.5s;
+  } 
+ 
+  .mySlides{
+      /* width: 100%; */
+      display: flex;
+      flex-direction: row;
+  }
+  .btn1{
+      margin: 30px 0px 30px 120px;
+    background-color: #FE7865;
+    color: white;
+    border: none;
+    height: 50px;
+    width: 180px;
+    font-family: sans-serif;
+    font-size: 16px;
+  }
+  .line{
+      margin: 10px 50px;
+  }
+
+  .zoom1 {
+    overflow: hidden;
+    /* width: 555px; */
+    height: auto; 
+
+    /* overflow: hidden; [1.2] Hide the overflowing of child elements */
+  }
+  
+  /* [2] Transition property for smooth transformation of images */
+  .zoom1 img {
+    transition: transform .5s ease;
+  }
+
+  /* [3] Finally, transforming the image when container gets hovered */
+  .zoom1:hover img {
+    transform: scale(1.2);
+  }
+.body2{
+  margin: 50px 0px;
+  justify-content:center;
+  /* width: 90%; */
+  display: flex;
+  flex-direction: row;
+  /* justify-content: space-around; */
+}
+.zoom1{
+  position: relative;
+}
+.prd1{
+  position: absolute;
+  top: 20px;
+  z-index: 2;
+  display: flex;
+  flex-direction: column;
+}
+.btn2{
+  border: none;
+  background-color: transparent;
+  width: 200px;
+  text-align: left;
+  margin: 15px 20px;
+  font-family: sans-serif;
+  color: #777777;
+}
+.btn2 :hover{
+  color: #FE7865;
+}
+.prd1a{
+  margin: 20px 0px 0px 20px;
+  font-family: sans-serif;
+  font-size: 25px;
+  color: #333333;
+}
+
+
+.sidenav {
+  width: 200px;
+  top: 0;
+  left: 0;
+  background-color: white;
+  overflow-x: hidden;
+  padding-top: 20px;
+}
+.hd{
+  height: 80px;
+  width: 200px;
+  background-color: #E5E5E5;
+  font-family: sans-serif;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+/* Style the sidenav links and the dropdown button */
+.sidenav a {
+  padding: 10px 0px;
+  text-decoration: none;
+  font-size: 20px;
+  color: #818181;
+  display: block;
+  border: none;
+  background: none;
+  text-align: left;
+  cursor: pointer;
+  outline: none;
+  text-align: center;
+}
+
+/* On mouse-over */
+.sidenav a:active {
+background-color: #FE7865;
+}
+.para3{
+  font-family: sans-serif;
+  font-size: 10px;
+  
+}
+.a1{
+  display: flex;
+  flex-direction: column;
+}
+.tabslide{
+  margin: 20px 20px;
+  display: flex;
+  flex-direction: row;
+  float: right;
+}
+.body3{
+  display: flex;
+  flex-direction: row;
+}

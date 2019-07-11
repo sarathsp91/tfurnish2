@@ -1,0 +1,211 @@
+<!DOCTYPE html>
+<html>
+    <head>
+    <title>
+        Furnish - Furniture and Decor 
+    </title>
+    <link rel="stylesheet" href="style.css">
+</head>
+    <body class="mainbody">
+        <div class="topportion">
+            <div class="topleft">
+                <img src="files/logo.png">
+            </div>
+        <div class="topnav">
+            <a class="active" href="#home">Home</a>
+            <a href="#products">Products</a>
+            <a href="#services">Services</a>
+            <a href="#portfolio">Portfolio</a>
+            <a href="#team">Team</a>
+            <a href="#blog">Blog</a>
+            <a href="#contact">Contact</a>
+          </div>
+        </div>
+        <div class="body1">
+                <div class="side">
+                    <div class="dots">
+                            <span class="dot" onclick="currentSlide(1)"></span> 
+                            <span class="dot" onclick="currentSlide(2)"></span> 
+                            <span class="dot" onclick="currentSlide(3)"></span> 
+                          </div>
+                        </div>
+
+                       
+                    <div class="mySlides fade">
+                      <!-- <div class="img1"> -->
+                            <img src="files/1.jpg" style="width:35%" style="object-fit:contain">
+                            <!-- <div class="circle"><span><strong>50%</strong></span><span><strong>OFF</strong></span></div>
+                          </div> -->
+                            <div class="topright">
+                          <span class="para1"><strong>Sofa and Armchairs</strong></span>
+                          <span class="para2">One day however a small line of blind text by the name of 
+                              Lorem Ipsum</span> <span class="para2"> to leave for the far World of Grammar.</span>
+                              <button class="btn1" type="button"><strong>Download Now! ></button>
+                                <hr class="line">
+                          </div>
+                          </div>
+
+                          <div class="mySlides fade">
+                            <img src="files/2.jpg" style="width:35%" style="object-fit:contain">
+                            <div class="topright">
+                            <span class="para1"><strong>Winter Sale! is Here</strong></span>
+                            <span class="para2">One day however a small line of blind text by the name of 
+                                Lorem Ipsum</span> <span class="para2"> to leave for the far World of Grammar.</span>
+                                <button class="btn1" type="button"><strong>Learn More ></button>
+                                  <hr class="line">
+                        </div>
+                          </div>
+                          
+                          <div class="mySlides fade">
+                            <img src="files/3.jpg" style="width:35%" style="object-fit:contain">
+                            <div class="topright">
+                              <span class="para1"><strong>Get a Free Quote</strong></span>
+                              <span class="para2">One day however a small line of blind text by the name of 
+                                Lorem Ipsum</span> <span class="para2"> to leave for the far World of Grammar.</span>
+                                  <button class="btn1" type="button"><strong>Contact Us ></button>
+                                    <hr class="line">
+                          </div>
+                        </div>
+                          <script>
+                              var slideIndex = 0;
+                              showSlides();
+                              function currentSlide(n) {
+                              showSlides(slideIndex = n);
+                            }
+                              
+                              function showSlides() {
+                                var i;
+                                var slides = document.getElementsByClassName("mySlides");
+                                var dots = document.getElementsByClassName("dot");
+                                for (i = 0; i < slides.length; i++) {
+                                  slides[i].style.display = "none";  
+                                }
+                                slideIndex++;
+                                if (slideIndex > slides.length) {slideIndex = 1}    
+                                for (i = 0; i < dots.length; i++) {
+                                  dots[i].className = dots[i].className.replace(" active", "");
+                                }
+                                slides[slideIndex-1].style.display = "block";  
+                                dots[slideIndex-1].className += " active";
+                                setTimeout(showSlides, 100000); // Change image every 2 seconds
+                              }
+                              </script>
+                              
+                          
+
+
+
+
+
+<!-- <div class="topright">
+    <span class="para1"><strong>Sofa and Armchairs</strong></span>
+    <span class="para2">One day however a small line of blind text by the name of 
+        Lorem Ipsum</span> <span class="para2"> to leave for the far World of Grammar.</span>
+        <button class="btn1" type="button"><strong>Download Now! ></button>
+          <hr class="line">
+</div> -->
+
+
+
+            
+        </div>
+
+        <div class="body2">
+          <div class="zoom1">
+            <img class="prd" style="width: 80%" src="files/product-1.jpg">
+            <div class="prd1">
+                <span class="prd1a">High-quality furnitures </span>
+                <span class="prd1a">For your home</span>
+                <button class="btn2" type="button"><strong>View Collection ></button>
+    
+                </div>
+          </div>
+          <div class="zoom1">
+              <img class="prd" style="width: 80%" src="files/product-2.jpg">
+            <div class="prd1">
+            <span class="prd1a">Hot Offer</span>
+            <span class="prd1a">Discount up to 80%</span>
+            <button class="btn2" type="button"><strong>View Collection ></button>
+
+            </div>
+            </div>
+        </div>
+        <div class="body3">
+        <div class="sidenav">
+          <div class="hd">OUR COLLECTION</div>
+            <a class="tab" onclick="currentSlides(1)">Furniture</a>
+            <a class="tab" onclick="currentSlides(2)">Decorative</a>
+            <a class="tab" onclick="currentSlides(3)">Lighting</a>
+            <a class="tab" onclick="currentSlides(4)">Outdoor</a>
+            <a class="tab" onclick="currentSlides(5)">Storage</a>
+            </div>
+
+            <div class="tabslide">
+                <img src="files/p-1.jpg" style="width:18%" style="object-fit:contain">
+                <span class="para3"><strong>Classic Wardrobe</strong></span>
+                <img src="files/p-2.jpg" style="width:18%" style="object-fit:contain">
+                <span class="para3"><strong>Touchwood Chair</strong></span>
+                <img src="files/p-3.jpg" style="width:18%" style="object-fit:contain">
+                <span class="para3"><strong>Fibre Chair</strong></span>
+              </div>
+            <div class="tabslide">
+                <img src="files/p-2.jpg" style="width:18%" style="object-fit:contain">
+                <span class="para3"><strong>Touchwood Chair</strong></span>
+                <img src="files/p-1.jpg" style="width:18%" style="object-fit:contain">
+                <span class="para3"><strong>Classic Wardrobe</strong></span>
+                <img src="files/p-3.jpg" style="width:18%" style="object-fit:contain">
+                <span class="para3"><strong>Fibre Chair</strong></span>
+            </div>
+            <div class="tabslide">
+                <img src="files/p-3.jpg" style="width:18%" style="object-fit:contain">
+                <span class="para3"><strong>Fibre Chair</strong></span>
+                <img src="files/p-2.jpg" style="width:18%" style="object-fit:contain">
+                <span class="para3"><strong>Touchwood Chair</strong></span>
+                <img src="files/p-1.jpg" style="width:18%" style="object-fit:contain">
+                <span class="para3"><strong>Classic Wardrobe</strong></span>
+            </div>
+            <div class="tabslide">
+                <img src="files/p-1.jpg" style="width:18%" style="object-fit:contain">
+                <span class="para3"><strong>Classic Wardrobe</strong></span>
+                <img src="files/p-2.jpg" style="width:18%" style="object-fit:contain">
+                <span class="para3"><strong>Touchwood Chair</strong></span>
+                <img src="files/p-3.jpg" style="width:18%" style="object-fit:contain">
+                <span class="para3"><strong>Fibre Chair</strong></span>
+              </div>
+            <div class="tabslide">
+                <img src="files/p-2.jpg" style="width:18%" style="object-fit:contain">
+                <span class="para3"><strong>Touchwood Chair</strong></span>
+                <img src="files/p-1.jpg" style="width:18%" style="object-fit:contain">
+                <span class="para3"><strong>Classic Wardrobe</strong></span>
+                <img src="files/p-3.jpg" style="width:18%" style="object-fit:contain">
+                <span class="para3"><strong>Fibre Chair</strong></span>
+            </div>
+          </div>
+
+            <script>
+                var slideIndex = 0;
+                showSlide();
+                function currentSlides(n) {
+                showSlide(slideIndex = n);
+              }
+                
+                function showSlide() {
+                  var i;
+                  var slides = document.getElementsByClassName("tabslide");
+                  var tabs = document.getElementsByClassName("tab");
+                  for (i = 0; i < slides.length; i++) {
+                    slides[i].style.display = "none";  
+                  }
+                  slideIndex++;
+                  if (slideIndex > slides.length) {slideIndex = 1}    
+                  for (i = 0; i < tabs.length; i++) {
+                    tabs[i].className = tabs[i].className.replace(" active", "");
+                  }
+                  slides[slideIndex-1].style.display = "block";  
+                  tabs[slideIndex-1].className += " active";
+                  // setTimeout(showSlides, 100000); // Change image every 2 seconds
+                }
+                </script>
+
+    </body>
+</html>
